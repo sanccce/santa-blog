@@ -7,9 +7,7 @@ let postId = 3;
 export const blogContext = createContext();
 
 export default function Blog() {
-  const [myposts, setMyPosts] = useState(
-    JSON.parse(localStorage.getItem("postData"))
-  );
+  const [myposts, setMyPosts] = useState(posts);
 
   //add new post
   function handleAddNewPost(text) {
